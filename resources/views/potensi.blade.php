@@ -28,7 +28,7 @@
         <p class="text-sm text-gray-500 dark:text-gray-400">Sektor pertanian di desa Muncang berjalan dan berkembang dengan baik dengan adanya <strong class="font-medium text-gray-800 dark:text-white">GAPOKTAN (Gabungan Kelompok Tani)</strong> yang terkoordinasi dengan baik. Produk utama meliputi padi, jagung, dan sayuran. Para petani di desa ini juga memanfaatkan teknologi pertanian modern dan metode pertanian organik untuk meningkatkan hasil panen.</p>
         <!-- Tambahkan video -->
         <video controls class="w-full mt-4">
-            <source src="vid/Sawah Desa Muncang.mp4" type="video/mp4">
+            <source src="vid/sawah.mp4" type="video/mp4">
             Video tidak didukung oleh browser Anda.
         </video>
         <!-- Galeri foto -->
