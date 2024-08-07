@@ -24,9 +24,11 @@ Route::middleware(['auth'])->group(function () {
 // Route untuk fitur CRUD Berita
 Route::resource('beritas', BeritaController::class);
 Route::get('/beritas/create', [BeritaController::class, 'create'])->name('berita.create');
-Route::post('/beritas/edit', [BeritaController::class, 'store'])->name('berita.store');
-
+Route::get('/beritas/edit/{id}', [BeritaController::class, 'edit'])->name('berita.edit');
+Route::put('beritas/{id}', [BeritaController::class, 'update'])->name('berita.update');
 Route::get('/beritas/{berita}', [BeritaController::class, 'show'])->name('beritas.show');
+
+Route::delete('berita/{id}', [BeritaController::class, 'destroy'])->name('berita.destroy');
 
 Route::get('/beritas', function(){
     $beritas = Berita::all();
@@ -37,18 +39,6 @@ Route::get('/news', function(){
     $beritas = Berita::all();
         return view('news', compact('beritas'));
 })->name('news');
-
-// Route untuk fitur CRUD Galeri
-Route::resource('galeris', GaleriController::class);
-Route::get('/galeris/create', [GaleriController::class, 'create'])->name('galeri.create');
-Route::post('/galeris/edit', [GaleriController::class, 'store'])->name('galeri.store');
-Route::post('/galeris/show', [GaleriController::class, 'show'])->name('galeri.show');
-
-Route::get('/galeris', function(){
-    $galeris = Galeri::all();
-        return view('admin.galeris.index', compact('galeris'));
-})->name('galeris.index');
-
 
 
 Route::get('/home', function () {

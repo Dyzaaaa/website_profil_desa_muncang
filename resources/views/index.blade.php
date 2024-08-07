@@ -118,7 +118,7 @@
                             </svg>
                         </a>
                         <!-- Instagram -->
-                        <a href="https://www.instagram.com/maliskandar_19/?hl=id" target="_blank"
+                        <a href="https://www.instagram.com/dyzasssa/" target="_blank"
                             class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
                             <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -128,7 +128,7 @@
                             </svg>
                         </a>
                         <!-- Tiktok -->
-                        <a href="https://www.tiktok.com/@maliskandar_" target="_blank"
+                        <a href="https://www.tiktok.com/@dyzanisa" target="_blank"
                             class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
                             <svg role="img" width="20" height="20" class="fill-current"
                                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -138,7 +138,7 @@
                             </svg>
                         </a>
                         <!-- Github -->
-                        <a href="https://github.com/Maliskandar" target="_blank"
+                        <a href="https://github.com/Dyzaaaa" target="_blank"
                             class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
                             <svg role="img" width="20" height="20" class="fill-current"
                                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

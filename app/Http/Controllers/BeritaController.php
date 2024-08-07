@@ -60,44 +60,40 @@ class BeritaController extends Controller
         return view('admin.beritas.show', compact('berita'));
     }
 
-    public function edit(Berita $berita)
+    public function edit($id)
     {
-        return view('berita.edit', compact('berita'));
+        $berita = Berita::find($id);
+        return view('admin.beritas.edit', compact('berita'));
     }
 
-    public function update(Request $request, Berita $berita)
+    public function update(Request $request, $id)
     {
         $request->validate([
             'judul' => 'required',
             'isi_berita' => 'required',
-            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'gambar' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
+
+        $berita = Berita::find($id);
+        $berita->judul = $request->get('judul');
+        $berita->isi_berita = $request->get('isi_berita');
 
         if ($request->hasFile('gambar')) {
-            if ($berita->gambar) {
-                Storage::delete('public/' . $berita->gambar);
-            }
-            $path = $request->file('gambar')->store('gambar', 'public');
-        } else {
-            $path = $berita->gambar;
+            $image = $request->file('gambar');
+            $imagePath = $image->store('uploads', 'public');
+            $berita->gambar = $imagePath;
         }
 
-        $berita->update([
-            'judul' => $request->judul,
-            'isi_berita' => $request->isi_berita,
-            'gambar' => $path,
-        ]);
+        $berita->save();
 
-        return redirect()->route('beritas.index')->with('success', 'Berita updated successfully.');
+        return redirect()->route('beritas.index')->with('success', 'Berita updated successfully');
     }
 
-    public function destroy(Berita $berita)
+    public function destroy($id)
     {
-        if ($berita->gambar) {
-            Storage::delete('public/' . $berita->gambar);
-        }
+        $berita = Berita::find($id);
         $berita->delete();
 
-        return redirect()->route('beritas.index')->with('success', 'Berita deleted successfully.');
+        return redirect()->route('beritas.index')->with('success', 'Berita deleted successfully');
     }
 }
