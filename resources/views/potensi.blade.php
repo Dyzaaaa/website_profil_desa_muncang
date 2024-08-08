@@ -25,7 +25,7 @@
 <div id="default-tab-content" class="pb-20 mb-20">
     <!-- Tab Pertanian -->
     <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800 mb-20" id="tani" role="tabpanel" aria-labelledby="tani-tab">
-        <p class="text-sm text-gray-500 dark:text-gray-400">Sektor pertanian di desa Muncang berjalan dan berkembang dengan baik dengan adanya <strong class="font-medium text-gray-800 dark:text-white">GAPOKTAN (Gabungan Kelompok Tani)</strong> yang terkoordinasi dengan baik. Produk utama meliputi padi, jagung, dan sayuran. Para petani di desa ini juga memanfaatkan teknologi pertanian modern dan metode pertanian organik untuk meningkatkan hasil panen.</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400">Sektor pertanian di desa Muncang berjalan dan berkembang dengan baik dengan adanya <strong class="font-medium text-gray-800 dark:text-white">GAPOKTAN (Gabungan Kelompok Tani)</strong> yang terkoordinasi dengan baik. Produk utamanya adalah padi. Para petani di desa ini juga memanfaatkan teknologi pertanian modern untuk meningkatkan hasil panen.</p>
         <!-- Tambahkan video -->
         <video controls class="w-full mt-4">
             <source src="vid/sawah.mp4" type="video/mp4">
@@ -50,7 +50,7 @@
 
     <!-- Tab Peternakan -->
     <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800 mb-20" id="ternak" role="tabpanel" aria-labelledby="ternak-tab">
-        <p class="text-sm text-gray-500 dark:text-gray-400">Peternakan di Desa Muncang meliputi pengelolaan hewan ternak seperti sapi, kambing, dan ayam. Peternak di desa ini menggunakan pakan alami dan teknik peternakan modern untuk memastikan kesehatan hewan dan kualitas produk.</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400">Peternakan di Desa Muncang meliputi pengelolaan hewan ternak ayam. Peternak di desa ini menggunakan pakan alami dan teknik peternakan modern untuk memastikan kesehatan hewan dan kualitas produk.</p>
         <!-- Tambahkan video -->
         <video controls class="w-full mt-4">
             <source src="vid/ternak.mp4" type="video/mp4">
@@ -81,7 +81,7 @@
 
     <!-- Tab Konveksi -->
     <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800 mb-20" id="konveksi" role="tabpanel" aria-labelledby="konveksi-tab">
-        <p class="text-sm text-gray-500 dark:text-gray-400">Industri konveksi di Desa Muncang menghasilkan berbagai produk pakaian dan tekstil. Para pekerja di sektor ini terampil dalam menjahit dan desain, menghasilkan produk yang berkualitas tinggi dan berdaya saing.</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400">Industri konveksi adalah sektor pengahsilan utama di Desa Muncang, hampir setiap rumah di desa Muncang memiliki seorang penjahit yang mengerjakan pesanan. Para pekerja di sektor ini terampil dalam menjahit, menghasilkan produk yang berkualitas tinggi.</p>
         <!-- Tambahkan video -->
         <video controls class="w-full h-screen mt-4">
             <source src="vid/konveksivideo.MOV" type="video/mp4">
@@ -112,7 +112,7 @@
 
     <!-- Tab UMKM Roti -->
     <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800 mb-20" id="roti" role="tabpanel" aria-labelledby="roti-tab">
-        <p class="text-sm text-gray-500 dark:text-gray-400">UMKM Roti di Desa Muncang mencakup berbagai usaha kecil dan menengah, termasuk produksi makanan ringan, kerajinan tangan, dan jasa lainnya. UMKM ini berperan penting dalam perekonomian desa dan menyediakan lapangan kerja bagi penduduk setempat.</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400">UMKM Roti di Desa Muncang adalah roti kenanga yang memproduksi roti secara massal dengan sistem pemesanan.</p>
         <!-- Tambahkan video -->
         <video controls class="w-full h-screen mt-4">
             <source src="vid/roti.mp4" type="video/mp4">
@@ -152,7 +152,7 @@
 
     <!-- Tab UMKM Tempe -->
     <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800 mb-20" id="tempe" role="tabpanel" aria-labelledby="tempe-tab">
-        <p class="text-sm text-gray-500 dark:text-gray-400">UMKM Tempe di Desa Muncang mencakup berbagai usaha kecil dan menengah, termasuk produksi makanan ringan, kerajinan tangan, dan jasa lainnya. UMKM ini berperan penting dalam perekonomian desa dan menyediakan lapangan kerja bagi penduduk setempat.</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400">UMKM Tempe di Desa Muncang masih menggunakan cara tradisional untuk pengelolaannya, namun dari segi kebersihan terjaga.</p>
         <!-- Galeri foto -->
         <div class="grid grid-cols-3 md:grid-cols-3 gap-4 mt-4">
             <div class="relative w-full h-60">

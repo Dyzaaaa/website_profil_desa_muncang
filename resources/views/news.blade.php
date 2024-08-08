@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- News Section Start -->
-<section id="news" class="pt-36 pb-16 bg-slate-100">
+<section id="news" class="pt-20 pb-16 bg-slate-100">
     <div class="px-16">
         <div class="w-full">
             <div class="max-w-xl mx-auto text-center mb-16">

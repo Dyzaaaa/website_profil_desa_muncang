@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section id="news-detail" class="pt-36 pb-16 bg-slate-100">
+<section id="news-detail" class="pt-36 pb-16 mb-20 bg-slate-100">
     <div class="px-16">
         <div class="w-full max-w-4xl mx-auto">
             <!-- Gambar Berita -->
