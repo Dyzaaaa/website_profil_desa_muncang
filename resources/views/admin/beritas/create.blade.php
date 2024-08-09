@@ -12,7 +12,7 @@
             </ul>
         </div>
     @endif
-    <form action="{{ route('berita.store') }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('beritas.index') }}" method="POST" enctype="multipart/form-data">
         @csrf
         @include('admin.beritas.form')
         <div class="container grid justify-items-center">
