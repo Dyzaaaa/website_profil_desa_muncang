@@ -21,7 +21,7 @@
 
             <div class="flex flex-wrap -mx-2">
                 <!-- Kolom Pertama -->
-                <div class="w-full md:w-full px-2">
+                <div class="w-full md:w-1/2 px-2">
                     <div class="mb-4">
                         <label for="kepadatan_penduduk" class="block text-gray-700 font-bold mb-2">Kepadatan Penduduk</label>
                         <input type="text" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="kepadatan_penduduk" name="kepadatan_penduduk" value="{{ old('kepadatan_penduduk') }}" required>
@@ -76,7 +76,10 @@
                         <label for="tamat_sltp" class="block text-gray-700 font-bold mb-2">Tamat SLTP</label>
                         <input type="number" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="tamat_sltp" name="tamat_sltp" value="{{ old('tamat_sltp') }}" required>
                     </div>
+                </div>
 
+                <!-- Kolom Kedua -->
+                <div class="w-full md:w-1/2 px-2">
                     <div class="mb-4">
                         <label for="tamat_slta" class="block text-gray-700 font-bold mb-2">Tamat SLTA</label>
                         <input type="number" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="tamat_slta" name="tamat_slta" value="{{ old('tamat_slta') }}" required>
@@ -141,36 +144,6 @@
                         <label for="nelayan" class="block text-gray-700 font-bold mb-2">Nelayan</label>
                         <input type="number" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="nelayan" name="nelayan" value="{{ old('nelayan') }}" required>
                     </div>
-
-                    <div class="mb-4">
-                        <label for="industri_kecil" class="block text-gray-700 font-bold mb-2">Industri Kecil</label>
-                        <input type="number" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="industri_kecil" name="industri_kecil" value="{{ old('industri_kecil') }}" required>
-                    </div>
-
-                    <div class="mb-4">
-                        <label for="pns" class="block text-gray-700 font-bold mb-2">PNS</label>
-                        <input type="number" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="pns" name="pns" value="{{ old('pns') }}" required>
-                    </div>
-
-                    <div class="mb-4">
-                        <label for="tni" class="block text-gray-700 font-bold mb-2">TNI</label>
-                        <input type="number" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="tni" name="tni" value="{{ old('tni') }}" required>
-                    </div>
-
-                    <div class="mb-4">
-                        <label for="polri" class="block text-gray-700 font-bold mb-2">POLRI</label>
-                        <input type="number" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="polri" name="polri" value="{{ old('polri') }}" required>
-                    </div>
-
-                    <div class="mb-4">
-                        <label for="pensiunan" class="block text-gray-700 font-bold mb-2">Pensiunan</label>
-                        <input type="number" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="pensiunan" name="pensiunan" value="{{ old('pensiunan') }}" required>
-                    </div>
-
-                    <div class="mb-4">
-                        <label for="lainnya" class="block text-gray-700 font-bold mb-2">Lainnya</label>
-                        <input type="number" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="lainnya" name="lainnya" value="{{ old('lainnya') }}" required>
-                    </div>
                 </div>
             </div>
 
@@ -181,6 +154,7 @@
         </form>
     </div>
 </div>
+
 
 
 @endsection
