@@ -68,22 +68,22 @@
         <!-- Galeri foto -->
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
             <div class="relative w-full h-60">
-                <img src="public/img/ternak1.jpg" alt="Peternakan 1" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/ternak1.JPG" alt="Peternakan 1" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/ternak2.jpg" alt="Peternakan 2" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/ternak2.JPG" alt="Peternakan 2" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/ternak3.jpg" alt="Peternakan 3" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/ternak3.JPG" alt="Peternakan 3" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/ternak4.jpg" alt="Peternakan 4" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/ternak4.JPG" alt="Peternakan 4" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/ternak5.jpg" alt="Peternakan 5" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/ternak5.JPG" alt="Peternakan 5" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/ternak6.jpg" alt="Peternakan 6" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/ternak6.JPG" alt="Peternakan 6" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
         </div>
     </div>
@@ -127,31 +127,31 @@
         <!-- Galeri foto -->
         <div class="grid grid-cols-3 md:grid-cols-3 gap-4 mt-4">
             <div class="relative w-full h-60">
-                <img src="public/img/roti1.jpg" alt="UMKM 1" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/roti1.JPG" alt="UMKM 1" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/roti2.jpg" alt="UMKM 2" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/roti2.JPG" alt="UMKM 2" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/roti3.jpg" alt="UMKM 3" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/roti3.JPG" alt="UMKM 3" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/roti4.jpg" alt="UMKM 4" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/roti4.JPG" alt="UMKM 4" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/roti5.jpg" alt="UMKM 5" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/roti5.JPG" alt="UMKM 5" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/roti6.jpg" alt="UMKM 6" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/roti6.JPG" alt="UMKM 6" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/roti7.jpg" alt="UMKM 7" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/roti7.JPG" alt="UMKM 7" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/roti8.jpg" alt="UMKM 8" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/roti8.JPG" alt="UMKM 8" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/roti9.jpg" alt="UMKM 9" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/roti9.JPG" alt="UMKM 9" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
         </div>
     </div>
@@ -162,31 +162,31 @@
         <!-- Galeri foto -->
         <div class="grid grid-cols-3 md:grid-cols-3 gap-4 mt-4">
             <div class="relative w-full h-60">
-                <img src="public/img/tempe1.jpg" alt="UMKM 1" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/tempe1.JPG" alt="UMKM 1" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/tempe2.jpg" alt="UMKM 2" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/tempe2.JPG" alt="UMKM 2" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/tempe3.jpg" alt="UMKM 3" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/tempe3.JPG" alt="UMKM 3" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/tempe4.jpg" alt="UMKM 4" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/tempe4.JPG" alt="UMKM 4" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/tempe5.jpg" alt="UMKM 5" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/tempe5.JPG" alt="UMKM 5" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/tempe6.jpg" alt="UMKM 6" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/tempe6.JPG" alt="UMKM 6" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/tempe7.jpg" alt="UMKM 7" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/tempe7.JPG" alt="UMKM 7" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/tempe8.jpg" alt="UMKM 8" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/tempe8.JPG" alt="UMKM 8" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
             <div class="relative w-full h-60">
-                <img src="public/img/tempe9.jpg" alt="UMKM 9" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                <img src="public/img/tempe9.JPG" alt="UMKM 9" class="absolute inset-0 w-full h-full object-cover rounded-lg">
             </div>
         </div>
     </div>
