@@ -12,7 +12,8 @@
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-4xl">
-        <form action="{{ route('monografi.index') }}" method="POST">
+        <form action="{{ route('monografi.store') }}" method="POST">
+        @csrf
             <div class="grid grid-cols-2 gap-6">
                 <div>
                     <div class="mb-4">
