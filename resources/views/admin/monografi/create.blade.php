@@ -2,9 +2,9 @@
 
 
 @section('content')
-<div class="flex justify-center items-center min-h-screen">
-    <div class="w-full max-w-4xl">
-        <h1 class="text-center text-2xl font-bold mb-8">Tambah Data Monografi</h1>
+<div class="flex justify-end items-center min-h-screen">
+    <div class="w-full max-w-md mr-4">
+        <h1 class="text-right text-xl font-bold mb-6">Tambah Data Monografi</h1>
 
         @if ($errors->any())
             <div class="bg-red-100 text-red-700 p-4 rounded mb-4">
@@ -19,9 +19,9 @@
         <form action="{{ route('monografi.store') }}" method="POST">
             @csrf
 
-            <div class="flex flex-wrap -mx-4">
+            <div class="flex flex-wrap -mx-2">
                 <!-- Kolom Pertama -->
-                <div class="w-full md:w-1/2 px-4">
+                <div class="w-full md:w-full px-2">
                     <div class="mb-4">
                         <label for="kepadatan_penduduk" class="block text-gray-700 font-bold mb-2">Kepadatan Penduduk</label>
                         <input type="text" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="kepadatan_penduduk" name="kepadatan_penduduk" value="{{ old('kepadatan_penduduk') }}" required>
@@ -96,10 +96,7 @@
                         <label for="buta_huruf" class="block text-gray-700 font-bold mb-2">Buta Huruf</label>
                         <input type="number" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="buta_huruf" name="buta_huruf" value="{{ old('buta_huruf') }}" required>
                     </div>
-                </div>
 
-                <!-- Kolom Kedua -->
-                <div class="w-full md:w-1/2 px-4">
                     <div class="mb-4">
                         <label for="petani_pemilik_tanah" class="block text-gray-700 font-bold mb-2">Petani Pemilik Tanah</label>
                         <input type="number" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="petani_pemilik_tanah" name="petani_pemilik_tanah" value="{{ old('petani_pemilik_tanah') }}" required>
@@ -184,5 +181,6 @@
         </form>
     </div>
 </div>
+
 
 @endsection
