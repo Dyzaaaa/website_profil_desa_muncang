@@ -6,7 +6,18 @@
     <div class="w-full max-w-6xl p-4 bg-white shadow-lg">
         <h1 class="text-center text-2xl font-bold mb-6">Tambah Data Monografi</h1>
         <div class="grid grid-cols-2 gap-6">
+        @if ($errors->any())
+            <div class="bg-red-100 text-red-700 p-4 rounded mb-4">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
 
+        <form action="{{ route('monografi.store') }}" method="POST">
+            @csrf
             <!-- Kolom Kiri -->
             <div>
                 <div class="mb-4">
@@ -249,6 +260,7 @@
         <div class="text-center mt-6">
             <button class="px-6 py-2 bg-blue-500 text-white font-semibold rounded-lg">Submit</button>
         </div>
+        </form>
     </div>
 </div>
 
