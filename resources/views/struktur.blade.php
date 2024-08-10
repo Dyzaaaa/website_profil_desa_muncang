@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="relative w-full h-auto overflow-hidden rounded-lg">
-    <img src="img/struktur.png" class="object-cover w-full h-full" alt="Descriptive Caption">
+    <img src="public/img/struktur.png" class="object-cover w-full h-full" alt="Descriptive Caption">
     </div>
 </div>
 
