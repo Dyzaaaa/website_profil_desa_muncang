@@ -6,7 +6,6 @@ use App\Models\Berita;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
-
 class BeritaController extends Controller
 {
     public function index()
@@ -17,8 +16,8 @@ class BeritaController extends Controller
 
     public function news()
     {
-        $beritas = Berita::all(); // Mengambil semua data berita
-        return view('beritas', compact('beritas')); // Mengirim data berita ke tampilan
+        $beritas = Berita::all();
+        return view('beritas', compact('beritas'));
     }
 
     public function create()
@@ -33,6 +32,8 @@ class BeritaController extends Controller
             'isi_berita' => 'required',
             'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
+
+        $path = null;
         if ($request->hasFile('gambar')) {
             $image = $request->file('gambar');
             $imagePath = $image->getPathname();
@@ -43,9 +44,8 @@ class BeritaController extends Controller
             }
 
             $path = $image->store('gambar', 'public');
-        } else {
-            $path = null;
         }
+
         Berita::create([
             'judul' => $request->judul,
             'isi_berita' => $request->isi_berita,
@@ -60,28 +60,31 @@ class BeritaController extends Controller
         return view('admin.beritas.show', compact('berita'));
     }
 
-    public function edit($id)
+    public function edit(Berita $berita)
     {
-        $berita = Berita::find($id);
         return view('admin.beritas.edit', compact('berita'));
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $request, Berita $berita)
     {
         $request->validate([
             'judul' => 'required',
             'isi_berita' => 'required',
-            'gambar' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
-        $berita = Berita::find($id);
         $berita->judul = $request->get('judul');
         $berita->isi_berita = $request->get('isi_berita');
 
         if ($request->hasFile('gambar')) {
+            // Hapus gambar lama jika ada
+            if ($berita->gambar && Storage::disk('public')->exists($berita->gambar)) {
+                Storage::disk('public')->delete($berita->gambar);
+            }
+
             $image = $request->file('gambar');
-            $imagePath = $image->store('uploads', 'public');
-            $berita->gambar = $imagePath;
+            $path = $image->store('uploads', 'public');
+            $berita->gambar = $path;
         }
 
         $berita->save();
@@ -89,9 +92,13 @@ class BeritaController extends Controller
         return redirect()->route('beritas.index')->with('success', 'Berita updated successfully');
     }
 
-    public function destroy($id)
+    public function destroy(Berita $berita)
     {
-        $berita = Berita::find($id);
+        // Hapus gambar jika ada
+        if ($berita->gambar && Storage::disk('public')->exists($berita->gambar)) {
+            Storage::disk('public')->delete($berita->gambar);
+        }
+
         $berita->delete();
 
         return redirect()->route('beritas.index')->with('success', 'Berita deleted successfully');
