@@ -63,7 +63,7 @@
     </nav>
 
 <!-- Hero Section Start -->
-<section id="home" class="relative w-full h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('img/balai desa.jpg');">
+<section id="home" class="relative w-full h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('public/img/balai desa.jpg');">
     <!-- Overlay dengan opacity 50% -->
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
     

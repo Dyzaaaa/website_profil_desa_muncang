@@ -150,7 +150,7 @@
     {{-- <main class="form-signin">
         <form action="" method="POST">
             @csrf
-            <img class="mb-4" src="/img/Kabupaten_Pemalang.png" alt="" width="72" height="57">
+            <img class="mb-4" src="/public/img/Kabupaten_Pemalang.png" alt="" width="72" height="57">
             <h1 class="h3 mb-3 fw-normal">Silahkan masuk</h1>
 
             @if ($errors->any())

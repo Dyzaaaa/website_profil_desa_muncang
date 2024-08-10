@@ -10,22 +10,22 @@
             <div class="relative w-full h-full overflow-hidden rounded-lg">
                 <!-- Item 1 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="img/peta fasilitas.pdf" class="block w-full h-full object-contain" alt="Peta Fasilitas">
+                    <img src="public/img/peta fasilitas.pdf" class="block w-full h-full object-contain" alt="Peta Fasilitas">
                     <div class="absolute bottom-0 left-0 w-full bg-gray-800 bg-opacity-50 text-white text-center p-2">Peta Fasilitas</div>
                 </div>
                 <!-- Item 2 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="img/peta titik fasil.jpg" class="block w-full h-full object-contain" alt="Peta Titik Fasilitas">
+                    <img src="public/img/peta titik fasil.jpg" class="block w-full h-full object-contain" alt="Peta Titik Fasilitas">
                     <div class="absolute bottom-0 left-0 w-full bg-gray-800 bg-opacity-50 text-white text-center p-2">Peta Titik Fasilitas</div>
                 </div>
                 <!-- Item 3 -->
                 <div class="rhidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="img/peta admin.png" class="block w-full h-full object-contain" alt="Peta Admin">
+                    <img src="public/img/peta admin.png" class="block w-full h-full object-contain" alt="Peta Admin">
                     <div class="absolute bottom-0 left-0 w-full bg-gray-800 bg-opacity-50 text-white text-center p-2">Peta Admin</div>
                 </div>
                 <!-- Item 4 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="img/peta layout.png" class="block w-full h-full object-contain" alt="Peta Layout">
+                    <img src="public/img/peta layout.png" class="block w-full h-full object-contain" alt="Peta Layout">
                     <div class="absolute bottom-0 left-0 w-full bg-gray-800 bg-opacity-50 text-white text-center p-2">Peta Layout</div>
                 </div>
             </div>
