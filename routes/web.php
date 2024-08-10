@@ -51,10 +51,7 @@ Route::get('/monografi/{monografi}', [MonografiController::class, 'show'])->name
 Route::delete('/monografi/{monografi}', [MonografiController::class, 'destroy'])->name('monografis.destroy');
 Route::post('/monografi', [MonografiController::class, 'store'])->name('monografi.store');
 
-// Rute untuk admin
-Route::prefix('admin')->group(function () {
-    Route::resource('monografi', MonografiController::class);
-});
+
 
 
 Route::get('/admin/monografi', function(){
