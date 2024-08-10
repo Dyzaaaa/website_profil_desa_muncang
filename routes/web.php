@@ -49,9 +49,7 @@ Route::get('/monografi/edit/{monografi}', [MonografiController::class, 'edit'])-
 Route::put('/monografi/update/{monografi}', [MonografiController::class, 'update'])->name('monografis.update');
 Route::get('/monografi/{monografi}', [MonografiController::class, 'show'])->name('monografis.show');
 Route::delete('/monografi/{monografi}', [MonografiController::class, 'destroy'])->name('monografis.destroy');
-Route::post('/admin/monografi', [MonografiController::class, 'store'])->name('monografi.store');
-
-
+Route::post('/admin/monografi/index', [MonografiController::class, 'store'])->name('monografi.store');
 
 
 
