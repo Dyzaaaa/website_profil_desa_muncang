@@ -37,7 +37,7 @@
         <p class="text-sm text-gray-500 dark:text-gray-400">Sektor pertanian di desa Muncang berjalan dan berkembang dengan baik dengan adanya <strong class="font-medium text-gray-800 dark:text-white">GAPOKTAN (Gabungan Kelompok Tani)</strong> yang terkoordinasi dengan baik. Produk utamanya adalah padi. Para petani di desa ini juga memanfaatkan teknologi pertanian modern untuk meningkatkan hasil panen.</p>
         <!-- Tambahkan video -->
         <video controls class="w-full mt-4">
-            <source src="vid/sawah.mp4" type="video/mp4">
+            <source src="public/vid/sawah.mp4" type="video/mp4">
             Video tidak didukung oleh browser Anda.
         </video>
         <!-- Galeri foto -->
@@ -62,7 +62,7 @@
         <p class="text-sm text-gray-500 dark:text-gray-400">Peternakan di Desa Muncang meliputi pengelolaan hewan ternak ayam. Peternak di desa ini menggunakan pakan alami dan teknik peternakan modern untuk memastikan kesehatan hewan dan kualitas produk.</p>
         <!-- Tambahkan video -->
         <video controls class="w-full mt-4">
-            <source src="vid/ternak.mp4" type="video/mp4">
+            <source src="public/vid/ternak.mp4" type="video/mp4">
             Video tidak didukung oleh browser Anda.
         </video>
         <!-- Galeri foto -->
@@ -93,7 +93,7 @@
         <p class="text-sm text-gray-500 dark:text-gray-400">Industri konveksi adalah sektor pengahsilan utama di Desa Muncang, hampir setiap rumah di desa Muncang memiliki seorang penjahit yang mengerjakan pesanan. Para pekerja di sektor ini terampil dalam menjahit, menghasilkan produk yang berkualitas tinggi.</p>
         <!-- Tambahkan video -->
         <video controls class="w-full h-screen mt-4">
-            <source src="vid/konveksivideo.MOV" type="video/mp4">
+            <source src="public/vid/konveksivideo.MOV" type="video/mp4">
             Video tidak didukung oleh browser Anda.
         </video>
         <!-- Galeri foto -->
@@ -121,7 +121,7 @@
         <p class="text-sm text-gray-500 dark:text-gray-400">UMKM Roti di Desa Muncang adalah roti kenanga yang memproduksi roti secara massal dengan sistem pemesanan.</p>
         <!-- Tambahkan video -->
         <video controls class="w-full h-screen mt-4">
-            <source src="vid/roti.mp4" type="video/mp4">
+            <source src="public/vid/roti.mp4" type="video/mp4">
             Video tidak didukung oleh browser Anda.
         </video>
         <!-- Galeri foto -->
