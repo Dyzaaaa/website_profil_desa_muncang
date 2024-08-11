@@ -6,7 +6,6 @@
     <title>Desa Muncang</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://unpkg.com/flowbite@1.6.4/dist/flowbite.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
 <body class="antialiased text-gray-900">
