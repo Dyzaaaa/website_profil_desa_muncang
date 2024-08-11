@@ -38,7 +38,7 @@
                 <div class="mt-1 flex items-center">
                     <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none focus:border-indigo-500" type="file" id="gambar" name="gambar">
                     @if ($berita->gambar)
-                        <img src="{{ asset('storage/' . $berita->gambar) }}" alt="Gambar Berita" class="ml-4 h-10 w-10 rounded-full object-cover">
+                        <img src="{{ asset('storage/app/public/' . $berita->gambar) }}" alt="Gambar Berita" class="ml-4 h-10 w-10 rounded-full object-cover">
                     @endif
                 </div>
             </div>
