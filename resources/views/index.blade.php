@@ -279,5 +279,7 @@
 
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script src="/path/to/local/flowbite.min.js"></script>
+
 </html>
