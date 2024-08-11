@@ -25,9 +25,9 @@ Route::middleware(['auth'])->group(function () {
 // Route untuk fitur CRUD Berita
 Route::resource('beritas', BeritaController::class);
 Route::get('/beritas/create', [BeritaController::class, 'create'])->name('berita.create');
-Route::get('/beritas/edit/{id}', [BeritaController::class, 'edit'])->name('berita.edit');
+Route::get('/beritas/edit/{berita}', [BeritaController::class, 'edit'])->name('berita.edit');
 
-Route::put('beritas/{id}', [BeritaController::class, 'update'])->name('berita.update');
+Route::put('beritas/{berita}', [BeritaController::class, 'update'])->name('berita.update');
 Route::get('/beritas/{berita}', [BeritaController::class, 'show'])->name('beritas.show');
 
 Route::delete('berita/{id}', [BeritaController::class, 'destroy'])->name('berita.destroy');
