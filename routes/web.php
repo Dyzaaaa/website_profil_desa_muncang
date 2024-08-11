@@ -30,7 +30,7 @@ Route::get('/beritas/edit/{berita}', [BeritaController::class, 'edit'])->name('b
 Route::put('beritas/{berita}', [BeritaController::class, 'update'])->name('berita.update');
 Route::get('/beritas/{berita}', [BeritaController::class, 'show'])->name('beritas.show');
 
-Route::delete('berita/{id}', [BeritaController::class, 'destroy'])->name('berita.destroy');
+Route::delete('berita/{berita}', [BeritaController::class, 'destroy'])->name('berita.destroy');
 
 Route::get('/beritas', function(){
     $beritas = Berita::all();
