@@ -224,7 +224,7 @@
 
     
 </body>
-<script src="https://unpkg.com/flowbite@2.5.1/dist/flowbite.min.js"></script>
+<script src="{{ asset('js/flowbite.min.js') }}"></script>
 </html>
 
 @endsection
