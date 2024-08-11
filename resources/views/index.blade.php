@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desa Muncang</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/flowbite@1.6.4/dist/flowbite.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
 <body class="antialiased text-gray-900">
@@ -14,22 +16,22 @@
             <a href="{{ route('home') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <span class="self-center text-2xl font-semibold dark:text-white">Desa Muncang</span>
             </a>
-            <button type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700" aria-controls="navbar-default" aria-expanded="false">
+            <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                 </svg>
             </button>
-            <div class="hidden md:block w-full md:w-auto" id="navbar-default">
+            <div class="hidden md:block w-full md:w-auto" id="navbar-dropdown">
                 <ul class="flex flex-col md:flex-row md:space-x-8">
                     <li>
                         <a href="{{ route('home') }}" class="block py-2 px-3 text-gray-900 rounded md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700">Home</a>
                     </li>
-                    <li class="relative group">
-                        <button class="block py-2 px-3 text-gray-900 rounded md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700">Profil</button>
+                    <li class="relative">
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="block py-2 px-3 text-gray-900 rounded md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700">Profil</button>
                         <!-- Dropdown menu -->
-                        <div class="absolute hidden group-hover:block bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-400 mt-1 rounded-lg shadow-lg">
-                            <ul class="py-2 text-sm">
+                        <div id="dropdownNavbar" class="hidden absolute z-50 mt-2 w-44 bg-white divide-y divide-gray-100 rounded-lg shadow-lg dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400">
                                 <li>
                                     <a href="{{ route('map') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Peta Desa</a>
                                 </li>
@@ -55,6 +57,7 @@
             </div>
         </div>
     </nav>
+
 <!-- Hero Section Start -->
 <section id="home" class="relative w-full h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('public/img/balai desa.jpg');">
     <!-- Overlay dengan opacity 50% -->
