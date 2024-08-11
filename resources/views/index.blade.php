@@ -29,7 +29,7 @@
                     <li class="relative">
                         <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="block py-2 px-3 text-gray-900 rounded md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700">Profil</button>
                         <!-- Dropdown menu -->
-                        <div id="dropdownNavbar" class="hidden absolute z-10 mt-2 w-44 bg-white divide-y divide-gray-100 rounded-lg shadow-lg dark:bg-gray-700">
+                        <div id="dropdownNavbar" class="hidden absolute z-50 mt-2 w-44 bg-white divide-y divide-gray-100 rounded-lg shadow-lg dark:bg-gray-700">
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-400">
                                 <li>
                                     <a href="{{ route('map') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Peta Desa</a>
