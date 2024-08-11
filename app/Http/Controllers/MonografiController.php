@@ -87,7 +87,7 @@ class MonografiController extends Controller
 
         Monografi::create($request->all());
 
-        return redirect()->route('monografi.store')->with('success', 'Data Monografi berhasil disimpan');
+        return redirect()->route('monografi.index')->with('success', 'Data Monografi berhasil disimpan');
     }
 
     // Menampilkan data monografi berdasarkan id

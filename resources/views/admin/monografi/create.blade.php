@@ -1,6 +1,5 @@
 @extends('admin.layouts.adminapp')
 
-
 @section('content')
 <!DOCTYPE html>
 <html lang="en">
@@ -11,10 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-4xl">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-4xl ml-auto mr-10">
         <form action="{{ route('monografi.store') }}" method="POST">
-        @csrf
+            @csrf
             <div class="grid grid-cols-2 gap-6">
+                <!-- Kolom Kiri -->
                 <div>
                     <div class="mb-4">
                         <label for="kepadatan_penduduk" class="block text-sm font-medium text-gray-700">Kepadatan Penduduk</label>
@@ -105,161 +105,57 @@
                         <input type="number" id="buruh_bangunan" name="buruh_bangunan" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
                     </div>
                     <div class="mb-4">
-                        <label for="buruh_perkebunan" class="block text-sm font-medium text-gray-700">Buruh Perkebunan</label>
-                        <input type="number" id="buruh_perkebunan" name="buruh_perkebunan" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                        <label for="buruh_industri" class="block text-sm font-medium text-gray-700">Buruh Industri</label>
+                        <input type="number" id="buruh_industri" name="buruh_industri" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
                     </div>
                     <div class="mb-4">
-                        <label for="pedagang" class="block text-sm font-medium text-gray-700">Pedagang</label>
-                        <input type="number" id="pedagang" name="pedagang" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                        <label for="buruh_kebun" class="block text-sm font-medium text-gray-700">Buruh Kebun</label>
+                        <input type="number" id="buruh_kebun" name="buruh_kebun" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
                     </div>
                     <div class="mb-4">
-                        <label for="pengangkutan" class="block text-sm font-medium text-gray-700">Pengangkutan</label>
-                        <input type="number" id="pengangkutan" name="pengangkutan" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                        <label for="pengrajin_industri_rumah_tangga" class="block text-sm font-medium text-gray-700">Pengrajin Industri Rumah Tangga</label>
+                        <input type="number" id="pengrajin_industri_rumah_tangga" name="pengrajin_industri_rumah_tangga" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
                     </div>
                     <div class="mb-4">
-                        <label for="pns_tni_polisi" class="block text-sm font-medium text-gray-700">PNS/TNI/Polisi</label>
-                        <input type="number" id="pns_tni_polisi" name="pns_tni_polisi" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                        <label for="pedagang_keliling" class="block text-sm font-medium text-gray-700">Pedagang Keliling</label>
+                        <input type="number" id="pedagang_keliling" name="pedagang_keliling" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
                     </div>
                     <div class="mb-4">
-                        <label for="pensiunan" class="block text-sm font-medium text-gray-700">Pensiunan</label>
-                        <input type="number" id="pensiunan" name="pensiunan" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                        <label for="pedagang_tetap" class="block text-sm font-medium text-gray-700">Pedagang Tetap</label>
+                        <input type="number" id="pedagang_tetap" name="pedagang_tetap" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
                     </div>
                     <div class="mb-4">
-                        <label for="jumlah_kepala_keluarga" class="block text-sm font-medium text-gray-700">Jumlah Kepala Keluarga</label>
-                        <input type="number" id="jumlah_kepala_keluarga" name="jumlah_kepala_keluarga" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                        <label for="wirausaha" class="block text-sm font-medium text-gray-700">Wirausaha</label>
+                        <input type="number" id="wirausaha" name="wirausaha" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
                     </div>
                     <div class="mb-4">
-                        <label for="jumlah_kepala_keluarga_laki_laki" class="block text-sm font-medium text-gray-700">Jumlah Kepala Keluarga Laki-laki</label>
-                        <input type="number" id="jumlah_kepala_keluarga_laki_laki" name="jumlah_kepala_keluarga_laki_laki" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                        <label for="pns" class="block text-sm font-medium text-gray-700">PNS</label>
+                        <input type="number" id="pns" name="pns" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
                     </div>
                     <div class="mb-4">
-                        <label for="jumlah_kepala_keluarga_perempuan" class="block text-sm font-medium text-gray-700">Jumlah Kepala Keluarga Perempuan</label>
-                        <input type="number" id="jumlah_kepala_keluarga_perempuan" name="jumlah_kepala_keluarga_perempuan" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                        <label for="pertukangan" class="block text-sm font-medium text-gray-700">Pertukangan</label>
+                        <input type="number" id="pertukangan" name="pertukangan" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
                     </div>
                     <div class="mb-4">
-                        <label for="jumlah_islam" class="block text-sm font-medium text-gray-700">Jumlah Islam</label>
-                        <input type="number" id="jumlah_islam" name="jumlah_islam" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                        <label for="tni_polri" class="block text-sm font-medium text-gray-700">TNI/Polri</label>
+                        <input type="number" id="tni_polri" name="tni_polri" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
                     </div>
                     <div class="mb-4">
-                        <label for="jumlah_khatolik" class="block text-sm font-medium text-gray-700">Jumlah Katholik</label>
-                        <input type="number" id="jumlah_khatolik" name="jumlah_khatolik" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                        <label for="pengemudi" class="block text-sm font-medium text-gray-700">Pengemudi</label>
+                        <input type="number" id="pengemudi" name="pengemudi" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
                     </div>
                     <div class="mb-4">
-                        <label for="jumlah_protestan" class="block text-sm font-medium text-gray-700">Jumlah Protestan</label>
-                        <input type="number" id="jumlah_protestan" name="jumlah_protestan" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="jumlah_hindu" class="block text-sm font-medium text-gray-700">Jumlah Hindu</label>
-                        <input type="number" id="jumlah_hindu" name="jumlah_hindu" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="jumlah_budha" class="block text-sm font-medium text-gray-700">Jumlah Budha</label>
-                        <input type="number" id="jumlah_budha" name="jumlah_budha" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="dokter" class="block text-sm font-medium text-gray-700">Dokter</label>
-                        <input type="number" id="dokter" name="dokter" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="perawat" class="block text-sm font-medium text-gray-700">Perawat</label>
-                        <input type="number" id="perawat" name="perawat" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="bidan" class="block text-sm font-medium text-gray-700">Bidan</label>
-                        <input type="number" id="bidan" name="bidan" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="dokter_khitan" class="block text-sm font-medium text-gray-700">Dokter Khitan</label>
-                        <input type="number" id="dokter_khitan" name="dokter_khitan" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="dukun_bayi" class="block text-sm font-medium text-gray-700">Dukun Bayi</label>
-                        <input type="number" id="dukun_bayi" name="dukun_bayi" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="apotek_depot_obat" class="block text-sm font-medium text-gray-700">Apotek/Depot Obat</label>
-                        <input type="number" id="apotek_depot_obat" name="apotek_depot_obat" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="tanah_sawah" class="block text-sm font-medium text-gray-700">Tanah Sawah</label>
-                        <input type="number" id="tanah_sawah" name="tanah_sawah" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="tanah_kering" class="block text-sm font-medium text-gray-700">Tanah Kering</label>
-                        <input type="number" id="tanah_kering" name="tanah_kering" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="tambak_kolam" class="block text-sm font-medium text-gray-700">Tambak/Kolam</label>
-                        <input type="number" id="tambak_kolam" name="tambak_kolam" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="rawa_rawa" class="block text-sm font-medium text-gray-700">Rawa-Rawa</label>
-                        <input type="number" id="rawa_rawa" name="rawa_rawa" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="masjid" class="block text-sm font-medium text-gray-700">Masjid</label>
-                        <input type="number" id="masjid" name="masjid" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="musholla" class="block text-sm font-medium text-gray-700">Musholla</label>
-                        <input type="number" id="musholla" name="musholla" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="gereja" class="block text-sm font-medium text-gray-700">Gereja</label>
-                        <input type="number" id="gereja" name="gereja" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="pura" class="block text-sm font-medium text-gray-700">Pura</label>
-                        <input type="number" id="pura" name="pura" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="wihara" class="block text-sm font-medium text-gray-700">Wihara</label>
-                        <input type="number" id="wihara" name="wihara" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="klenteng" class="block text-sm font-medium text-gray-700">Klenteng</label>
-                        <input type="number" id="klenteng" name="klenteng" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="sarana_pendidikan" class="block text-sm font-medium text-gray-700">Sarana Pendidikan</label>
-                        <input type="number" id="sarana_pendidikan" name="sarana_pendidikan" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="sarana_kesehatan" class="block text-sm font-medium text-gray-700">Sarana Kesehatan</label>
-                        <input type="number" id="sarana_kesehatan" name="sarana_kesehatan" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="sarana_sosial" class="block text-sm font-medium text-gray-700">Sarana Sosial</label>
-                        <input type="number" id="sarana_sosial" name="sarana_sosial" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="lapangan_olahraga" class="block text-sm font-medium text-gray-700">Lapangan Olahraga</label>
-                        <input type="number" id="lapangan_olahraga" name="lapangan_olahraga" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="taman_rekreasi" class="block text-sm font-medium text-gray-700">Taman Rekreasi</label>
-                        <input type="number" id="taman_rekreasi" name="taman_rekreasi" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="jalur_hijau" class="block text-sm font-medium text-gray-700">Jalur Hijau</label>
-                        <input type="number" id="jalur_hijau" name="jalur_hijau" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="pemakaman" class="block text-sm font-medium text-gray-700">Pemakaman</label>
-                        <input type="number" id="pemakaman" name="pemakaman" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                        <label for="lainnya" class="block text-sm font-medium text-gray-700">Lainnya</label>
+                        <input type="text" id="lainnya" name="lainnya" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
                     </div>
                 </div>
             </div>
+
             <div class="flex justify-end mt-6">
-                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md shadow-sm hover:bg-blue-600">Submit</button>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Submit</button>
             </div>
         </form>
     </div>
 </body>
 </html>
-    
-
-
-
-
 @endsection
