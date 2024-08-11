@@ -40,7 +40,7 @@
                     <td class="px-4 py-2 border-b border-gray-200">{{ $berita->judul }}</td>
                     <td class="px-4 py-2 border-b border-gray-200">{{ Str::limit($berita->isi_berita, 100) }}</td>
                     <td class="px-4 py-2 border-b border-gray-200">
-                        <img src="{{ asset('public/storage/' . $berita->gambar) }}" width="100" class="rounded-md">
+                        <img src="{{ asset('public/images/' . $berita->gambar) }}" width="100" class="rounded-md">
                     </td>
                     <td class="px-4 py-2 border-b border-gray-200">{{ $berita->tanggal_upload }}</td>
                     <td class="px-4 py-2 border-b border-gray-200">

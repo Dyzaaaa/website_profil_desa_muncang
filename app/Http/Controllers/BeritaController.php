@@ -43,7 +43,7 @@ class BeritaController extends Controller
                 return redirect()->back()->withErrors(['gambar' => 'Lebar gambar harus lebih besar dari tinggi (format landscape).']);
             }
 
-            $path = $image->store('gambar', 'public');
+            $path = $image->store('images', 'public');
         }
 
         Berita::create([
