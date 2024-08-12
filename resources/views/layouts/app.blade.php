@@ -36,15 +36,15 @@
                         <!-- Dropdown menu -->
                         <div id="dropdownNavbar" class="absolute hidden z-50 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-400">
-                                <li>
+                                <!-- <li>
                                     <a href="{{ route('map') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Peta Desa</a>
-                                </li>
+                                </li> -->
                                 <li>
                                     <a href="{{ route('struktur') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Struktur Organisasi Desa</a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="{{ route('monografi') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Monografi Desa</a>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </li>
