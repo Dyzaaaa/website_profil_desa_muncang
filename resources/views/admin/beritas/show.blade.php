@@ -8,7 +8,7 @@
             <!-- Gambar Berita -->
             <div class="rounded-md shadow-md overflow-hidden mb-8">
                 @if ($berita->gambar)
-                    <img src="{{ asset('storage/' . $berita->gambar) }}" alt="{{ $berita->judul }}" class="w-full h-96 object-cover">
+                    <img src="{{ asset('storage/app/public/' . $berita->gambar) }}" alt="{{ $berita->judul }}" class="w-full h-96 object-cover">
                 @else
                     <img src="https://via.placeholder.com/800x600" alt="Placeholder" class="w-full h-96 object-cover">
                 @endif
