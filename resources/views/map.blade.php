@@ -19,7 +19,7 @@
                     <div class="absolute bottom-0 left-0 w-full bg-gray-800 bg-opacity-50 text-white text-center p-2">Peta Titik Fasilitas</div>
                 </div>
                 <!-- Item 3 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="rhidden duration-700 ease-in-out" data-carousel-item>
                     <img src="public/img/peta admin.png" class="block w-full h-full object-contain" alt="Peta Admin">
                     <div class="absolute bottom-0 left-0 w-full bg-gray-800 bg-opacity-50 text-white text-center p-2">Peta Admin</div>
                 </div>
