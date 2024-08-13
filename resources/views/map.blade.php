@@ -5,7 +5,7 @@
 <div class="relative min-h-screen bg-gray-100">
     <!-- Carousel Section -->
     <div class="flex justify-center items-center pt-5 pb-16">
-        <div id="gallery" class="relative w-full md:w-3/4 lg:w-2/3 h-[80vh]" data-carousel="static">
+        <div id="gallery" class="relative w-full md:w-3/4 lg:w-2/3 h-[80vh]" data-carousel="slide">
             <!-- Carousel wrapper -->
             <div class="relative w-full h-full overflow-hidden rounded-lg">
                 <!-- Item 1 -->
