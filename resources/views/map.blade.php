@@ -10,22 +10,22 @@
             <div class="relative w-full h-full overflow-hidden rounded-lg">
                 <!-- Item 1 -->
                 <div class="duration-700 ease-in-out" data-carousel-item="active">
-                    <img src="{{ asset('img/peta fasilitas.pdf') }}" class="block w-full h-full object-contain" alt="Peta Fasilitas">
+                    <img src="{{ asset('img/peta_fasilitas.pdf') }}" class="block w-full h-full object-contain" alt="Peta Fasilitas">
                     <div class="absolute bottom-0 left-0 w-full bg-gray-800 bg-opacity-50 text-white text-center p-2">Peta Fasilitas</div>
                 </div>
                 <!-- Item 2 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="{{ asset('img/peta titik fasil.jpg') }}" class="block w-full h-full object-contain" alt="Peta Titik Fasilitas">
+                    <img src="{{ asset('img/peta_titik_fasil.jpg') }}" class="block w-full h-full object-contain" alt="Peta Titik Fasilitas">
                     <div class="absolute bottom-0 left-0 w-full bg-gray-800 bg-opacity-50 text-white text-center p-2">Peta Titik Fasilitas</div>
                 </div>
                 <!-- Item 3 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="{{ asset('img/peta admin.png') }}" class="block w-full h-full object-contain" alt="Peta Admin">
+                    <img src="{{ asset('img/peta_admin.png') }}" class="block w-full h-full object-contain" alt="Peta Admin">
                     <div class="absolute bottom-0 left-0 w-full bg-gray-800 bg-opacity-50 text-white text-center p-2">Peta Admin</div>
                 </div>
                 <!-- Item 4 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="{{ asset('img/peta layout.png') }}" class="block w-full h-full object-contain" alt="Peta Layout">
+                    <img src="{{ asset('img/peta_layout.png') }}" class="block w-full h-full object-contain" alt="Peta Layout">
                     <div class="absolute bottom-0 left-0 w-full bg-gray-800 bg-opacity-50 text-white text-center p-2">Peta Layout</div>
                 </div>
             </div>
@@ -55,7 +55,4 @@
 @section('scripts')
 <!-- Flowbite JS -->
 <script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.1/dist/flowbite.min.js"></script>
-<script>
-  // Tidak perlu JavaScript tambahan karena Flowbite sudah menangani carousel
-</script>
 @endsection
