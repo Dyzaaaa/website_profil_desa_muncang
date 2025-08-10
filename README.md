@@ -12,11 +12,11 @@ This project provides comprehensive information about the village, including its
 - **Login System for Admin** – Secure access to manage content.
 
 ## 🛠️ Tech Stack
-- **HTML5**
-- **Tailwind CSS**
-- **JavaScript**
-- **PHP** (for backend functionality)
-- **MySQL** (database)
+- HTML5
+- Tailwind CSS
+- JavaScript
+- PHP (Laravel Framework)
+- Blade (Laravel Templating Engine)
 
 ## 📄 Modul
 https://drive.google.com/file/d/1BpSLcH_cF8cpJRoqyRm4AigX3Ypu7VVC/view?usp=sharing
