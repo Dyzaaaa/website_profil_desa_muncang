@@ -18,6 +18,11 @@ This project provides comprehensive information about the village, including its
 - **PHP** (for backend functionality)
 - **MySQL** (database)
 
-## [📄 Modul]
+## 📄 Modul
 https://drive.google.com/file/d/1BpSLcH_cF8cpJRoqyRm4AigX3Ypu7VVC/view?usp=sharing
+
+## 📸 Screenshot
+![Alt Text] (https://drive.google.com/file/d/1fOQdBoTTQLE3A_L_66RkqoGXDAF1SINR/view?usp=sharing)
+![Alt Text] (https://drive.google.com/file/d/1QVucsrSWRLc81MY4nkbaT9HbAGuXyYfZ/view?usp=sharing)
+![Alt Text] (https://drive.google.com/file/d/1C7E7bgW-tAXWp832UXdu3-kPNwJNb3wL/view?usp=sharing)
 
