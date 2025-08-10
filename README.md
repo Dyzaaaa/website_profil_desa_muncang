@@ -18,5 +18,6 @@ This project provides comprehensive information about the village, including its
 - **PHP** (for backend functionality)
 - **MySQL** (database)
 
-## [📄 Lihat Modul] (./docs/modul_web.pdf)
+## [📄 Modul]
+https://drive.google.com/file/d/1BpSLcH_cF8cpJRoqyRm4AigX3Ypu7VVC/view?usp=sharing
 
